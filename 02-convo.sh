@@ -3,10 +3,10 @@
 PERSON1 = Modi
 PERSON2 = CBN
 
-echo "$PERSON1:: Hi $PERSON2 Anna, How are you?"
-echo "$PERSON2:: Hi ra, I am Good. How are you doing"
-echo "$PERSON1:: I am fine too. What about Dragon?"
-echo "$PERSON2:: Dragon coming excellent."
-echo "$PERSON1:: Can't wait to see Dragon anna."
-echo "$PERSON2:: It'll be blast!"
-echo "$PERSON1:: JAI NTR!"
+echo "Prudhvi:: Hi NTR Anna, How are you?"
+echo "NTR:: Hi ra, I am Good. How are you doing"
+echo "Prudhvi:: I am fine too. What about Dragon?"
+echo "NTR:: Dragon coming excellent."
+echo "Prudhvi:: Can't wait to see Dragon anna."
+echo "NTR:: It'll be blast!"
+echo "Prudhvi:: JAI NTR!"
