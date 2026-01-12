@@ -2,4 +2,4 @@
 
 MOVIES=("Devara" "Pushpa2" "Kalki2898AD" "Dragon")
 
-echo "First Movie: ${Movie[1]}"
+echo "First Movie: ${MOVIES(0)}"
