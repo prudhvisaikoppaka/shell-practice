@@ -15,7 +15,6 @@ else
 fi
 
 IF [ $NUMBER 99 -gt 10 ]
-then
    echo "Given number $NUMBER is gretaer than 10"
 else
    echo "Given number $NUMBER is less than 10"
