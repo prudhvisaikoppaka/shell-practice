@@ -17,6 +17,4 @@ NUMBER=$99
 
 if [ $NUMBER 99 -gt 10 ]
    echo "Given number $NUMBER is greater than 10"
-else
-   echo "Given number $NUMBER is not greater than 10"
 fi
