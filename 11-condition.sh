@@ -1,15 +1,15 @@
 #!/bin/bash
 
-NUMBER=$99
+NUMBER=$9
 
 # -gt --> greater than
 # -lt --> less than
 # -eq --> equal
 # -ne --> not equal
 
-if [ $NUMBER 99 -gt 10 ]
+if [ $NUMBER 9 -gt 5 ]
 then
    echo "Given number $NUMBER is greater than 10"
 else
-   echo "Given number $NUMBER is less than 10"
+   echo "Given number $NUMBER is not greater than 10"
 fi
