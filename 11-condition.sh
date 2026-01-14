@@ -9,7 +9,7 @@ NUMBER=$9
 
 if [ $NUMBER 9 -gt 5 ]
 then
-   echo "Given number $NUMBER is greater than 10"
+   echo "Given number $NUMBER is greater than 5"
 else
-   echo "Given number $NUMBER is not greater than 10"
+   echo "Given number $NUMBER is not greater than 5"
 fi
