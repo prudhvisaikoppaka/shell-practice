@@ -1,4 +1,5 @@
 #!/bin/bash
+
 NUMBER=$9
 
 # -gt --> greater than
