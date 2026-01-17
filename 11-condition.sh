@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER=$99
+NUMBER=$9999
 
 # -gt --> greater than
 # -lt --> less than
