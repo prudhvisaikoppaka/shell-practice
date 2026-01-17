@@ -44,7 +44,7 @@ dnf list installed nginx
 if [ $? -ne 0 ]
 then      
    echo "nginx is not installed... going to install it"
-   dnf install nginx-y
+   dnf install nginx -y
    VALIDATE $? "nginx"
 else
    echo "nginx is already installed."
