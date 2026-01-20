@@ -25,14 +25,14 @@ VALIDATE(){
    fi       
 }
 
-dnf list installed MySQL
+dnf list installed mysql
 if [ $? -ne 0 ]
 then      
-   echo "MySQL is not installed... going to install it"
-   dnf install MySQL -y
-   VALIDATE $? "MySQL"
+   echo "mysql is not installed... going to install it"
+   dnf install mysql -y
+   VALIDATE $? "mysql"
 else
-   echo -e "$G MySQL is already installed."
+   echo -e "$G mysql is already installed."
 fi
 
 dnf list installed python3
