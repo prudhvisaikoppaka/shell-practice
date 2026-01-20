@@ -54,3 +54,13 @@ then
 else
    echo -e "$G nginx is already installed."
 fi
+
+dnf list installed python2
+if [ $? -ne 0 ]
+then
+   echo -e "$R Python2 is not installed... going to install it $Y"
+   dnf install python2 -y
+   VALIDATE $? "python2"
+else
+   echo -e "$G python2 is already installed."
+fi   
