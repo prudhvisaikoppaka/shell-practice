@@ -2,4 +2,4 @@
 
 echo -e "\e[32m Hello Colors"
 
-echo -e "Hello NO Colors"
+echo -e "Hello Normal Colors"
