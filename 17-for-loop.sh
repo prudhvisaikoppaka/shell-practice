@@ -7,4 +7,4 @@ do
     then
        exit 1
     fi   
-done    
+done
