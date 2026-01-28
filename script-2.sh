@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "PID of SCRIPT-1: $$"
 echo "$GREETING"
+echo "PID of SCRIPT_2: $$"
