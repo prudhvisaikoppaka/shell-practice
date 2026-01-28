@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "$GREETING"
+echo "Hello World"
 echo "PID of SCRIPT_2: $$"

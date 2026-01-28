@@ -6,4 +6,4 @@ echo "PID of SCRIPT-1: $$"
 
 # ./script-2.sh # Here "." represents current directory
 
-source ./script-2.sh
+source ./script-2.sh 
