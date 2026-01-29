@@ -62,6 +62,7 @@ then
    echo "Files to zip are: $FILES"
    TIMESTAMP=$(date +%F-%H-%M-%S)
    ZIP_FILE="$DEST_DIR/app-logs-$TIMESTAMP.zip"
+   echo $FILES | zip -@ $ZIP_FILE # @ means all files
 else
    echo -e "No log files found older than 14 days ... $Y SKKIPING $N"
 fi      
