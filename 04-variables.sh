@@ -1,12 +1,12 @@
 #!/bin/bash
 
 PERSON1=PrudhviSai
-PERSON2=TarakRamarao
+PERSON2=Arvind
 
-echo "$PERSON1:: Hi $PERSON2 Anna, How are you?"
-echo "$PERSON2:: Hi ra, I am Good. How are you doing"
-echo "$PERSON1:: I am fine too. What about Dragon?"
-echo "$PERSON2:: Dragon coming excellent."
-echo "$PERSON1:: Can't wait to see Dragon anna."
-echo "$PERSON2:: It'll be blast!"
-echo "$PERSON1:: JAI NTR!"
+echo "$PERSON1:: Hi Mr. $PERSON2, How are you?"
+echo "$PERSON2:: Hi Mr.$PERSON1, I am Good. How are you doing"
+echo "$PERSON1:: I am fine too. Using AI is so cool"
+echo "$PERSON2:: Yeah, that's why i created perplexity."
+echo "$PERSON1:: You are doing Great"
+echo "$PERSON2:: Thank You!"
+echo "$PERSON1:: See you later."

@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "Prudhvi:: Hi NTR Anna, How are you?"
-echo "NTR:: Hi ra, I am Good. How are you doing"
-echo "Prudhvi:: I am fine too. What about Dragon?"
-echo "NTR:: Dragon coming excellent."
-echo "Prudhvi:: Can't wait to see Dragon anna."
-echo "NTR:: It'll be blast!"
-echo "Prudhvi:: JAI NTR!"
+echo "Prudhvi:: Hi Mr. Arvind, How are you?"
+echo "Arvind::  Hi Mr.Prudhvi, I am Good. How are you doing"
+echo "Prudhvi:: I am fine too. Using AI is so cool"
+echo "Arvind::  Yeah, that's why i created perplexity."
+echo "Prudhvi:: You are doing Great"
+echo "Arvind::  Thank You!"
+echo "Prudhvi:: See you later."
