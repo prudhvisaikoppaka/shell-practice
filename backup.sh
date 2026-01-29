@@ -54,3 +54,5 @@ then
    echo -e "$R Destination directory $DEST_DIR doesnot exist. Please check $N"
    exit 1
 fi
+
+FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
