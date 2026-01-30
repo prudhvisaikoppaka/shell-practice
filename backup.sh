@@ -62,9 +62,9 @@ then
    echo "Files to zip are: $FILES"
    TIMESTAMP=$(date +%F-%H-%M-%S)
    ZIP_FILE="$DEST_DIR/app-logs-$TIMESTAMP.zip"
-   echo $FILES | zip -@ $ZIP_FILE  # @ means all files
+   echo $FILES | zip -@ $ZIP_FILE  # @ means all files. Install zip file 
 
-   if [ -f $ZIP_FILE ]
+   if [ -f $ZIP_FILE ] # -d means directory, -f means file
    then
       echo -e "Successfully created zip file"
 
