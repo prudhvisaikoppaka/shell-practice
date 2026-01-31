@@ -7,7 +7,7 @@ DAYS=${3:-14} # if Days are provided that will be considered, otherwise 14 days 
 
 LOGS_FOLDER="/var/log/shellscript-logs"
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
-LOG_FILE="$LOG_FOLDER/$SCRIPT_NAME.LOG"
+LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.LOG"
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
