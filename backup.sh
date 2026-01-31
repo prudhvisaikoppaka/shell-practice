@@ -43,19 +43,19 @@ then
    USAGE
 fi
 
-if [ ! -d $SOURCE_DIR ]
+if [ ! -d "$SOURCE_DIR" ]
 then
    echo -e "$R Source directory $SOURCE_DIR doesnot exist. Please check $N"
    exit 1
 fi
 
-if [ ! -d $DEST_DIR ]
+if [ ! -d "$DEST_DIR" ]
 then
    echo -e "$R Destination directory $DEST_DIR doesnot exist. Please check $N"
    exit 1
 fi
 
-FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
+FILES=$(find "$SOURCE_DIR" -name "*.log" -mtime +$DAYS)
 
 if [ ! -z "$FILES" ]
 then
@@ -64,7 +64,7 @@ then
    ZIP_FILE="$DEST_DIR/app-logs-$TIMESTAMP.zip"
    echo $FILES | zip -@ $ZIP_FILE  # @ means all files. Install zip file 
 
-   if [ -f $ZIP_FILE ] # -d means directory, -f means file
+   if [ -f "$ZIP_FILE" ] # -d means directory, -f means file
    then
       echo -e "Successfully created zip file"
 
@@ -72,7 +72,7 @@ then
       do
          echo "Deleting file: $filepath" | tee -a $LOG_FILE
          rm -rf $filepath
-      done <<< $FILES
+      done <<< "$FILES"
 
       echo -e "Log files older than $DAYS from source directory removed ... $G SUCCESS $N"
    else
