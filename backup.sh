@@ -62,7 +62,7 @@ then
    echo "Files to zip are: $FILES"
    TIMESTAMP=$(date +%F-%H-%M-%S)
    ZIP_FILE="$DEST_DIR/app-logs-$TIMESTAMP.zip"
-   echo $FILES | zip -@ $ZIP_FILE  # @ means all files. Install zip file 
+   echo "$FILES" | zip -@ "$ZIP_FILE"  # @ means all files. Install zip file 
 
    if [ -f "$ZIP_FILE" ] # -d means directory, -f means file
    then
@@ -71,7 +71,7 @@ then
       while IFS= read -r filepath
       do
          echo "Deleting file: $filepath" | tee -a $LOG_FILE
-         rm -rf $filepath
+         rm -rf "$filepath"
       done <<< "$FILES"
 
       echo -e "Log files older than $DAYS from source directory removed ... $G SUCCESS $N"
@@ -81,4 +81,4 @@ then
    fi       
 else
    echo -e "No log files found older than 14 days ... $Y SKKIPING $N"
-fi      
+fi
