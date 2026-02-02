@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TO_TEAM=$1
-ALert_Type=$2
+ALERT_TYPE=$2
 IP_ADDRESS=$3
 MSG=$4
 FINAL_MSG=$(printf '%s\n' "$MSG" | sed -e 's/[]\/$*.^[]/\\&/g' )
