@@ -15,6 +15,6 @@ do
   fi
 done <<< $DISK_USAGE
 
-echo -e $MSG # -e for enable new line
+#echo -e $MSG  -e for enable new line
 
 sh mail.sh "DevOps Team" "High Disk Usage" "$IP" "$MSG" "prudhvisaikoppaka9989@gmail.com" "ALERT-High Disk Usage"
