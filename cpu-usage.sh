@@ -1,8 +1,10 @@
 #!/bin/bash
 # Get CPU usage percentage
 
-
-cpu_usage=$(top -bn1 | grep "Cpu(s)" | awk '{print $2 + $4}')
-echo "CPU Usage: ${cpu_usage}%"   
+while true; do
+    cpu_usage=$(top -b-n2 -p 1 | fgrep "Cpu(s)" | tail -1 | awk -F'id,' -v prefix="$prefix" '{ split($1, vs, ","); v )}
+    echo "CPU Usage: ${cpu_usage}%"
+    sleep 1
+done
 # Alternative using mpstat
 # mpstat 1 1 | awk '/Average/ {print 100 - $NF"%"}'

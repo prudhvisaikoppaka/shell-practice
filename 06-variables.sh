@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PERSON1=$1
+PERSON1=$1 # $VAR or ${VAR}
 PERSON2=$2
 
  echo "$PERSON1:: Hi Mr. $PERSON2, How are you?"
